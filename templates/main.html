@@ -4,7 +4,11 @@
 <div class="jumbotron">
   <h1>MKTYP6a Fall17 Final Project APP</h1>
   <p class="text-warning">
-    Change this to be the main page for your app
+    {% if status %}
+    You are logged in
+    {% else %}
+    You must <a href="/login">log in</a> to use this app
+    {% endif %}
   </p>
 </div>
 <div class="text-center">
